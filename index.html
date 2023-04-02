@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<script src="js/scripts.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	
+	<body>
+		<div class="container">
+			<h1 style="color: red;">TEJ Application Project</style></h1>
+			<div class="m_body">
+				<hr/>	
+				<form>
+					<h2>Samosa</h2>
+					<label for="Price1">Price:</label>
+					<input type="Number" id="Price1" name="Price1" value=""><br><br>
+					<label for="Quantity1">Quantity:</label>
+					<button type="button" onclick="document.getElementById('Quantity1').stepUp()">+</button>
+					<input type="Number" id="Quantity1" name="Quantity1" value="0"  min="1" max="100" step="1">
+					<button type="button" onclick="document.getElementById('Quantity1').stepDown()">-</button><br><br>
+					<label for="total"><b>Total:</b></label>
+					<span id="total1">0</span>
+	
+					<hr>
+	
+					<h2>Tea</h2>
+					<label for="Price2">Price:</label>
+					<input type="Number" id="Price2" name="Price2" value=""><br><br>
+					<label for="Quantity2">Quantity:</label>
+					<button type="button" onclick="document.getElementById('Quantity2').stepUp()">+</button>
+					<input type="Number" id="Quantity2" name="Quantity2" value="0" min="1" max="100" step="1">
+					<button type="button" onclick="document.getElementById('Quantity2').stepDown()">-</button><br><br>
+					<label for="total"><b>Total:</b></label>
+					<span id="total2">0</span>
+	
+					<hr>
+	
+					<label for="Total price"><b>Total price:</b></label>
+					<span id="total12">0</span><br><br>
+
+					<label for="Vat">Vat(13%):</label>
+					<input type="number" id="Vat" name="Vat(13%)" value="0" ><br><br>
+					
+
+
+	    			<label for="Tip">Tip(10%):</label>
+	    			<input type="number" id="Tip" name="Tip(10%)" value="0" ><br><br>
+					
+
+
+					<hr>
+
+	    			<label for="Grand total"><b>Grand total:</b></label>
+					<span id="Grand_total">0</span><br><br>
+
+	    
+	    			<button type="button" onclick="calculateTotal()">Calculate Grand Total
+					</form>
+					
+		        
+				</div></div>
+							
+	</body>
+					
+				
+</html>
+
+
